@@ -25,4 +25,6 @@ APP.set("view engine", "ejs");
 
 require("./routes.js")(APP);
 
-APP.listen(PORT);
+APP.listen(PORT, (req, res) => {
+	console.log(`Listening in Port ${PORT}`);
+});

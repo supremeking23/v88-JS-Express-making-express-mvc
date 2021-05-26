@@ -1,5 +1,5 @@
 module.exports = (APP) => {
-	const USERSCONTROLLER = require("./controllers/users");
+	const USERSCONTROLLER = require("./controllers/users.controllers");
 	const user = new USERSCONTROLLER.Users();
 
 	APP.get("/", user.index);
