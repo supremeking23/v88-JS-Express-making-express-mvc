@@ -1,10 +1,13 @@
-module.exports = (APP) => {
-	const USERSCONTROLLER = require("./controllers/users.controllers");
-	const user = new USERSCONTROLLER.Users();
+module.exports = (app) => {
+	const user = require("./controllers/users.controllers");
 
-	APP.get("/", user.index);
+	// const user = new USERSCONTROLLER.Users();
 
-	APP.post("/process_form", user.process_form);
+	console.log(typeof user);
 
-	APP.get("/result", user.result);
+	app.get("/", user.index);
+
+	app.post("/process_form", user.process_form);
+
+	app.get("/result", user.result);
 };

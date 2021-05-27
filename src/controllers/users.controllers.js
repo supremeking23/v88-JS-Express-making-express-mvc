@@ -1,10 +1,5 @@
-// exports.index = (req, res) => {
-// 	res.render("index");
-// 	// res.send("sdsds");
-// };
-
 class Users {
-	constructor() {}
+	constructor(test) {}
 
 	index(req, res) {
 		res.render("index");
@@ -20,6 +15,10 @@ class Users {
 		if (req.session.survey_information === undefined) res.redirect("/");
 		res.render("result", { user: req.session.survey_information });
 	}
+
+	// some_function(req, res) {
+	// 	access express object here
+	// }
 }
 
-module.exports = { Users };
+module.exports = new Users();
