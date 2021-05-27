@@ -20,5 +20,5 @@ class Users {
 	// 	access express object here
 	// }
 }
-
+console.log(Users);
 module.exports = new Users();
