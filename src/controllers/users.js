@@ -20,5 +20,6 @@ class Users {
 	// 	access express object here
 	// }
 }
-console.log(Users);
+console.log("type of");
+console.log(typeof Users);
 module.exports = new Users();
